@@ -1,0 +1,14 @@
+{
+"flag_dir":"/ctfs/format_string/fs2/flag",
+"flag_pre":"FLAG_WHAT_IS_YOUR_SECRET_",
+"execs":[
+	{"cmd" : " chown guest:guest /home/guest/" , "extra" : "", "options" : ""},
+	{"cmd" : " chmod 755 /home/guest" , "extra" : "", "options" : ""},
+    {"cmd" : " chown ctf:guest /home/guest/" , "extra" : "/format", "options" : ""},
+    {"cmd" : " chmod 4550 /home/guest/", "extra" : "/format", "options" : ""},
+    {"cmd" : " chattr +i /home/guest/", "extra" : "/format", "options" : "--privileged "},
+    {"cmd" : " chown ctf:ctf /home/guest/" , "extra" : "/flag", "options" : ""},
+    {"cmd" : " chmod 400 /home/guest/", "extra" : "/flag", "options" : ""},
+    {"cmd" : " chattr +i /home/guest/" , "extra" : "/flag", "options" : "--privileged "}
+]
+}
